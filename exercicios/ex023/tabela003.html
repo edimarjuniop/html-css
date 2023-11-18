@@ -6,7 +6,6 @@
     <title>Tabelas</title>
     <style>
         table {
-            border: 2px dashed black;
             border-collapse: collapse;
             width: 500px;
         }
@@ -18,14 +17,20 @@
             background-color: lightgray;
         }
 
-        th, td {
-            border: 1px solid black;
-        }
+        
 
         thead {
             font-size: 1.5em;
             background-color: rgb(50, 50, 50);
             color: white;
+        }
+
+        tbody > tr {
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: gray;
         }
 
         tfoot {
