@@ -58,17 +58,28 @@ section {
     font-size: 1.5em;
 }
 
+section p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
 }
 
 section.image {
-    background: url('../imagens/background001.jpg') right bottom no-repeat fixed;
     background-color: rgb(50, 50, 50);
     background-size: cover;
     
     color: white;
+}
+
+#img01 {
+    background: url('../imagens/background001.jpg') right center no-repeat fixed;
+}
+
+#img02 {
+    background: url('../imagens/background002.jpg') right bottom no-repeat fixed;
 }
 
 section.image > p{
