@@ -19,13 +19,10 @@
             font-weight: bold;
         }
 
-        input {
-            border-radius: 10px;
-        }
-
         .button input {
             width: 128px;
             background-color: blue;
+            border-radius: 10px;
             color: white;
             padding: 10px;
             border: none;
@@ -39,11 +36,12 @@
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post">
         <fieldset>
             <legend>Exemplo de Formulário</legend>
             <p><label for="cor">Cor: </label><input type="color" name="cor" id="cor"></p>
             <p><label for="nivel">Nivel de Satisfação: </label><input type="range" name="nivel" id="nivel" min="1" max="10"></p>
+            <p><label for="foto">Foto do Perfil: </label><input type="file" name="foto" id="foto"></p>
         </fieldset>
         <p class="button">
             <input type="submit" value="Confirmar">
