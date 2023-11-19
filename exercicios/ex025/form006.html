@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            border: 1px dashed black;
+            border-radius: 15px;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        input {
+            border-radius: 10px;
+        }
+
+        .button input {
+            width: 128px;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        
+        .button input:hover {
+            background-color: rgb(32, 128, 255);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Exemplo de Formulário</legend>
+            <p><label for="cor">Cor: </label><input type="color" name="cor" id="cor"></p>
+            <p><label for="nivel">Nivel de Satisfação: </label><input type="range" name="nivel" id="nivel" min="1" max="10"></p>
+        </fieldset>
+        <p class="button">
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
