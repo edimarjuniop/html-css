@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    border: 1px dashed black;
+    border-radius: 15px;
+    max-width: 400px;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.button input {
+    width: 128px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.button input:hover {
+    background-color: rgb(32, 128, 255);
+    color: white;
+}
