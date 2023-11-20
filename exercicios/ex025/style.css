@@ -7,7 +7,7 @@ body {
 }
 
 fieldset {
-    border: 1px dashed black;
+    border: none;
     border-radius: 15px;
     max-width: 400px;
     background-color: white;
