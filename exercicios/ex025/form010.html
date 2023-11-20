@@ -13,7 +13,7 @@
             
             <p>
                 <label for="ano">Em que ano você nasceu? </label>
-                <input type="number" name="ano" id="ano" min="1900" max="2023" oninput="idade.innerHTML = (2023 - Number(ano.value))">
+                <input type="number" name="ano" id="ano" min="1900" max="2023" oninput="calcIdade()">
             </p>
 
             <p>
@@ -27,5 +27,12 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML
+        }
+    </script>
 </body>
 </html>
