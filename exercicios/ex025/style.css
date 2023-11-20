@@ -3,18 +3,23 @@
 }
 
 body {
-    background-color: (32, 32, 32);
+    background-color: rgb(32, 32, 32);
 }
 
 fieldset {
     border: 1px dashed black;
     border-radius: 15px;
     max-width: 400px;
+    background-color: white;
 }
 
 legend {
     font-size: 1.5em;
     font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .button input {
