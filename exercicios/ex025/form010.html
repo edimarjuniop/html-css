@@ -30,8 +30,12 @@
 
     <script>
         function calcIdade() {
-            let atual = new Date().getFullYear()
-            idade.innerHTML
+            let atual = new Date().getFullYear();
+            if (Number(ano.value) < Number(ano.min) || Number(ano.value) > Number(ano.max)) {
+                idade.innerHTML = 0;
+            } else {
+                idade.innerHTML = Number(atual) - Number(ano.value);
+            }
         }
     </script>
 </body>
