@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Formulário</legend>
+            
+            <p>
+                <label for="n1">Número: </label>
+                <input type="range" name="n1" id="n1" min="0" max="10" value="5" oninput="res.innerHTML = Number(n1.value)">
+                <output name="res" id="res">0</output>
+            </p>
+
+        </fieldset>
+        <p class="button">
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
