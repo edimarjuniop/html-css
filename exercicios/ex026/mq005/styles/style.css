@@ -52,6 +52,7 @@ menu a {
 
 menu a:hover {
     background-color: blue;
+    transition: .25s;
 }
 
 main {

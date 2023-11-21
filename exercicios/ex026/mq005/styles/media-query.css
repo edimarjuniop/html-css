@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu#items {
+        display: block;
+    }
+
+    menu li {
+        display: inline-block;
+        width: 128px;
+        margin: 4px;
+    }
+    
+    menu a {
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+    menu a:hover {
+        background-color: aquamarine;
+        transition: .25s;
+    }
+
+    main {
+        width: 600px;
+    }
+}
